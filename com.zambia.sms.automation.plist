@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.zambia.sms.automation</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/adityakrishnav/Desktop/ZAMBIA_SMS/zambia_auto.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/adityakrishnav/Desktop/ZAMBIA_SMS</string>
+
+    <!-- Run daily at 2:30 PM (14:30) IST -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>14</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+
+    <!-- Log stdout and stderr -->
+    <key>StandardOutPath</key>
+    <string>/Users/adityakrishnav/Desktop/ZAMBIA_SMS/logs/scheduler_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/adityakrishnav/Desktop/ZAMBIA_SMS/logs/scheduler_stderr.log</string>
+
+    <!-- Keep alive only on schedule, don't restart on failure -->
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

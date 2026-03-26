@@ -1,0 +1,13 @@
+# Credentials
+.env
+
+# Generated outputs
+daily_news_updates.sql
+logs/
+
+# OS files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
